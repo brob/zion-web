@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
 :root {
   --background:  rgb(255, 255, 255);;
 }
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
-
 .content {
   height: 200vh;
   background-image: url(//unsplash.it/1000/1000);
@@ -24,27 +20,23 @@ body {
   display: grid;
   place-items: center;
 }
-
 /* navigation styles start here */
-
 header {
   background: var(--background);
+  background: #fff; /* for ie*/
   text-align: center;
   position: fixed;
   z-index: 999;
   width: 100%;
 }
-
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
-
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px solid rgba(lightblue, .75);
 }
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -54,7 +46,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -65,21 +56,17 @@ header {
   border-radius: 2px;
   position: relative;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
-
 .nav-toggle-label span::before {
   bottom: 7px;
 }
-
 .nav-toggle-label span::after {
   top: 7px;
 }
-
 nav {
   position: absolute;
   text-align: left;
@@ -91,18 +78,15 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
 }
-
 nav a {
   color: #444;
   text-decoration: none;
@@ -111,15 +95,12 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-
 nav a:hover {
   color: #000;
 }
-
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
 }
-
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
@@ -145,7 +126,6 @@ nav a:hover {
 }
 .about,li{
   text-align: center;
-
 }
 .about{
   font-family:  Poppins,Helvetica,Arial,Lucida,sans-serif;
@@ -160,7 +140,6 @@ nav a:hover {
   .nav-toggle-label {
     display: none;
   }
-
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -168,10 +147,12 @@ nav a:hover {
   
   .logo {
     grid-column: 2 / 3;
+    float:left;
+    margin-left: 100px;
   }
   
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
+     all: unset; /* this causes issues with Edge, since it's unsupported */
     
     /*  Edge support */
     position: relative;
@@ -220,15 +201,11 @@ nav a:hover {
     transform: scale(1,1);
   }
   
-
-
-
 .about{
     background-image:url("images/about_bkg.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .about,h2,h1{
   display: grid;
   place-items: center;
@@ -241,3 +218,6 @@ nav a:hover {
 .about,li{
   text-align: center;
 }
+
+  
+ 
