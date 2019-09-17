@@ -18,6 +18,9 @@ body {
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
+  
+
+
   place-items: center;
 }
 /* navigation styles start here */
@@ -28,6 +31,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  
 }
 .nav-toggle {
   position: absolute !important;
@@ -45,6 +49,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+  
 }
 .nav-toggle-label span,
 .nav-toggle-label span::before,
@@ -77,12 +82,14 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  
 }
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
@@ -136,6 +143,16 @@ nav a:hover {
 .atalogo{
   width: 100px;
 }
+.services{
+  line-height: 1.8;
+
+}
+
+footer{
+  color:white;
+  font-size:10px;
+  text-align: center;
+}
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -170,8 +187,11 @@ nav a:hover {
     align-items: center;
   }
   
+  
   nav ul {
     display: flex;
+    /*margin-top:-20px;*/
+   
   }
   
   nav li {
