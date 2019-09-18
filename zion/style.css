@@ -158,14 +158,14 @@ footer{
     display: none;
   }
   header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-  
-  .logo {
-    grid-column: 2 / 3;
-    float:left;
-    margin-left: 100px;
+    /* 
+       At desktop, you really don't need Grid for this layout,
+       I'd stick with flex and add some padding
+    */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8vw;
+
   }
   
   nav {
@@ -181,7 +181,6 @@ footer{
     left: initial;
     /* end Edge support stuff */
     
-    grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
